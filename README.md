@@ -45,13 +45,13 @@ Assumptions
 Users must provide a valid email and a password that meets the minimum criteria for the password strength indicator to show accurate results.
 The "Remember Me" functionality only remembers the email, not the password, to enhance security.
 
-###Project Features
-##Sign Up Form:
+### Project Features
+## Sign Up Form:
 
 Validates email and password inputs.
 Displays a password strength indicator.
 Shows a success message upon valid submission.
-Login Form:
+##  Login Form:
 
 Includes a "Remember Me" checkbox that saves the email to local storage.
 Validates email and password inputs.
