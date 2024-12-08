@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# React Sign Up and Login Forms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple React application featuring a **Sign Up** and **Login** form, with features such as form validation using **Formik** and **Yup**, a password strength indicator, "Remember Me" functionality, and an accessible design.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## How to Run the Project
 
-### `npm start`
+### Prerequisites
+- Ensure **Node.js** and **npm** are installed on your system.
+  - Download Node.js from [here](https://nodejs.org/).
+- Ensure you have a code editor like **Visual Studio Code**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Steps to Run
+1. Clone the repository or download the project files:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+### Install the dependencies:
+npm install
+Start the development server:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm start
+Open http://localhost:3000 in your browser to view the application.
+Design Choices
+1. UI Design
+The forms have a clean and minimal design with clear labels and a modern aesthetic.
+A responsive layout ensures usability across devices.
+Interactive elements like buttons and checkboxes use hover effects to enhance user feedback.
+2. Validation
+Real-time validation with Formik and Yup provides instant feedback for user input errors.
+Specific error messages ensure clarity and prevent ambiguity.
+3. Password Strength Indicator
+The password strength indicator evaluates the strength of the password and provides immediate visual feedback:
+Weak: Red
+Medium: Orange
+Strong: Green
+4. Remember Me Functionality
+The "Remember Me" checkbox in the login form saves the email in local storage for convenience.
+5. Accessibility
+All input fields and form elements have proper ARIA roles and labels to ensure compatibility with assistive technologies.
+Error messages and success notifications are screen-reader-friendly.
+Assumptions and Limitations
+Assumptions
+Users must provide a valid email and a password that meets the minimum criteria for the password strength indicator to show accurate results.
+The "Remember Me" functionality only remembers the email, not the password, to enhance security.
+No backend is integrated, so form submissions are simulated for demonstration purposes.
+Limitations
+The application does not connect to a database or an API, so submitted data is not stored persistently.
+The password strength indicator does not enforce security policies; it is only for user feedback.
+Accessibility testing has been done using standard guidelines but may require further refinement for edge cases.
+Project Features
+Sign Up Form:
 
-### `npm test`
+Validates email and password inputs.
+Displays a password strength indicator.
+Shows a success message upon valid submission.
+Login Form:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Includes a "Remember Me" checkbox that saves the email to local storage.
+Validates email and password inputs.
+Displays a success message upon valid submission.
+General:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Fully responsive design.
+Accessible for users with disabilities.
