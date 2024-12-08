@@ -44,13 +44,9 @@ Assumptions and Limitations
 Assumptions
 Users must provide a valid email and a password that meets the minimum criteria for the password strength indicator to show accurate results.
 The "Remember Me" functionality only remembers the email, not the password, to enhance security.
-No backend is integrated, so form submissions are simulated for demonstration purposes.
-Limitations
-The application does not connect to a database or an API, so submitted data is not stored persistently.
-The password strength indicator does not enforce security policies; it is only for user feedback.
-Accessibility testing has been done using standard guidelines but may require further refinement for edge cases.
-Project Features
-Sign Up Form:
+
+###Project Features
+##Sign Up Form:
 
 Validates email and password inputs.
 Displays a password strength indicator.
@@ -60,7 +56,3 @@ Login Form:
 Includes a "Remember Me" checkbox that saves the email to local storage.
 Validates email and password inputs.
 Displays a success message upon valid submission.
-General:
-
-Fully responsive design.
-Accessible for users with disabilities.
